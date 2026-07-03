@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0a0a0a;
+  --accent-color: #2ed2bb;
+  --muted-accent: #2ed2bc3b;
+  --background-color: #0a0a0a00;
+  --muted-color: #8c8f95;
+  --text-main: #fafafa;
+  --font-main: "Geist", sans-serif;
+  --font-secondary: "Geist Mono", monospace;
+}
+body {
+  background: var(--primary-color);
+  color: var(--text-main);
+  font-family: var(--font-main);
+}
+h1 {
+  font-size: 3rem;
+}
+.subheading {
+  font-size: 2rem;
+}
+p {
+  color: var(--muted-color);
+}
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.main {
+  color: var(--text-main);
+}
+.main-dot {
+  color: var(--accent-color);
+}
+.btn-primary {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  /* padding: 12px 24px 12px 24px;
+  border-radius: 8px; */
+}
+.btn-secondary {
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--accent-color);
+}
+.btn-secondary:hover {
+  background-color: var(--muted-accent);
+}
+.navigation a {
+  color: var(--muted-color);
+}
+.navigation a:hover,
+.main:hover {
+  color: var(--accent-color);
+}
+.intro {
+  font-family: var(--font-secondary);
+  color: var(--accent-color);
+}
