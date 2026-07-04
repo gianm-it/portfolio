@@ -14,8 +14,10 @@ using semantic HTML5">
 <body>
     <div class="app-container" id="top">
         <header>
-            <a href="#top" class="main">GM</a>
-            <span class="main-dot">.</span>
+            <a href="#top" class="main">GM<span class="main-dot">.</span>
+
+            </a>
+
             <nav class="navigation">
                 <ul>
                     <li>
@@ -37,13 +39,18 @@ using semantic HTML5">
         <main>
             <section id="hero">
                 <p class="intro">Hi, my name is</p>
-                <h1>Gian Morales</h1>
+                <h1 class="myname">Gian Morales</h1>
                 <p class="subheading"> I build functional applications with clean code and
                     structured design.</p>
-                <p> IT Student Specializing in software development, currently hand-building full-stack capabilities.
+                <p class="main-about">Dedicated IT student specializing in software development, bridging the gap
+                    between robust backend architecture and intuitive frontend design. Actively hand-building my
+                    full-stack capabilities through practical projects, combining object-oriented programming with clean
+                    UI/UX principles to create complete, user-centric applications.
                 </p>
-                <a href="#projects" class="btn-primary">View Project</a>
-                <a href="#contact" class="btn-secondary">Contact Me</a>
+                <div class="btn">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
             </section>
             <section id="about">
                 <h2>ABOUT</h2>
@@ -56,103 +63,107 @@ using semantic HTML5">
             </section>
             <section id="skills">
                 <h2>SKILLS</h2>
-                <div>
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>C#</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3 (Flexbox/Grid)</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Backend &amp; Tools</h3>
-                    <ul>
-                        <li>Object-Oriented Programming (OOP)</li>
-                        <li>Figma</li>
-                        <li>Git/GitHub</li>
-                    </ul>
+                <div class="skills-grid">
+                    <div>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3 (Flexbox/Grid)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Backend &amp; Tools</h3>
+                        <ul>
+                            <li>Object-Oriented Programming (OOP)</li>
+                            <li>Figma</li>
+                            <li>Git/GitHub</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section id="projects">
                 <h2>PROJECTS</h2>
-                <article>
-                    <div>
-                        <!--TODO:Image Placeholder 1-->
-                        <h3>Responsive Developer Portfolio Shell</h3>
-                        <p>A minimalist, mobile-responsive portfolio built from scratch
-                            using semantic HTML5 and modern CSS. Built to practice core layout core
-                            architectures like Flexbox and CSS Grid.</p>
-                    </div>
-                    <div>
-                        <!--TECH STACK-->
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Flexbox &amp; Grid</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p>
-                            <strong>
-                                <a href="#">[Live Demo]</a>
-                            </strong>
-                        </p>
-                        <p><a href="#">[GitHub]</a></p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <!--TODO:Add Image Placeholder 2-->
-                        <h3>Full-Stack Job Application Tracker (In Development)</h3>
-                        <p>A web application designed to track job applications, featuring
-                            secure user authentication, relational database storage, and full CRUD
-                            functionality.
-                        </p>
-                    </div>
-                    <div>
-                        <!--TECH STACK-->
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>PostgreSQL</li>
-                            <li>VanillaJS</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p><a href="#">[Coming Soon]</a></p>
-                        <p><a href="#">[GitHub <abbr title="Repository">Repo</abbr>]</a></p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <!--TODO:Add Image Placeholder 2-->
-                        <h3>Object-Oriented Application Prototype</h3>
-                        <p>A desktop application leveraging robust backend logic,
-                            structured inheritance, and efficient data handling developed during core
-                            programming coursework.
-                        </p>
-                    </div>
-                    <div>
-                        <!--TECH STACK-->
-                        <ul>
-                            <li>C#</li>
-                            <li>Java</li>
-                            <li><abbr title="Object-Oriented Programming">OOP</abbr></li>
-                            <li>Figma (Prototyping)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p><a href="#">[Case Study]</a></p>
-                        <p><a href="#">[GitHub]</a></p>
-                    </div>
-                </article>
+                <div class="projects-grid">
+                    <article>
+                        <div>
+                            <!--TODO:Image Placeholder 1-->
+                            <h3>Responsive Developer Portfolio Shell</h3>
+                            <p>A minimalist, mobile-responsive portfolio built from scratch
+                                using semantic HTML5 and modern CSS. Built to practice core layout core
+                                architectures like Flexbox and CSS Grid.</p>
+                        </div>
+                        <div>
+                            <!--TECH STACK-->
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Flexbox &amp; Grid</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                <strong>
+                                    <a href="#">[Live Demo]</a>
+                                </strong>
+                            </p>
+                            <p><a href="#">[GitHub]</a></p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <!--TODO:Add Image Placeholder 2-->
+                            <h3>Full-Stack Job Application Tracker (In Development)</h3>
+                            <p>A web application designed to track job applications, featuring
+                                secure user authentication, relational database storage, and full CRUD
+                                functionality.
+                            </p>
+                        </div>
+                        <div>
+                            <!--TECH STACK-->
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>PostgreSQL</li>
+                                <li>VanillaJS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><a href="#">[Coming Soon]</a></p>
+                            <p><a href="#">[GitHub <abbr title="Repository">Repo</abbr>]</a></p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <!--TODO:Add Image Placeholder 2-->
+                            <h3>Object-Oriented Application Prototype</h3>
+                            <p>A desktop application leveraging robust backend logic,
+                                structured inheritance, and efficient data handling developed during core
+                                programming coursework.
+                            </p>
+                        </div>
+                        <div>
+                            <!--TECH STACK-->
+                            <ul>
+                                <li>C#</li>
+                                <li>Java</li>
+                                <li><abbr title="Object-Oriented Programming">OOP</abbr></li>
+                                <li>Figma (Prototyping)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><a href="#">[Case Study]</a></p>
+                            <p><a href="#">[GitHub]</a></p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
         <hr>
