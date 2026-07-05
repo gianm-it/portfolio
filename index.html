@@ -15,37 +15,36 @@ using semantic HTML5">
     <div class="app-container" id="top">
         <header>
             <a href="#top" class="main">GM<span class="main-dot">.</span>
-
             </a>
-
-            <nav class="navigation">
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="assets/resume.pdf" download class="btn-cv">Download CV</a>
+            </div>
         </header>
         <hr>
         <main>
             <section id="hero">
                 <p class="intro">Hi, my name is</p>
                 <h1 class="myname">Gian Morales</h1>
-                <p class="subheading"> I build functional applications with clean code and
-                    structured design.</p>
-                <p class="main-about">Dedicated IT student specializing in software development, bridging the gap
-                    between robust backend architecture and intuitive frontend design. Actively hand-building my
-                    full-stack capabilities through practical projects, combining object-oriented programming with clean
-                    UI/UX principles to create complete, user-centric applications.
+                <p class="subheading">Bridging frontend interfaces with robust ASP.NET Core backend architecture.</p>
+                <p class="main-about">An IT student and aspiring Backend Developer focused on building secure,
+                    scalable web applications. Currently specializing in C# and ASP.NET Core to master
+                    enterprise-grade software development.
                 </p>
                 <div class="btn">
                     <a href="#projects" class="btn-primary">View Projects</a>
@@ -54,11 +53,11 @@ using semantic HTML5">
             </section>
             <section id="about">
                 <h2>ABOUT</h2>
-                <p>I am an IT student and developer focused on bridging the gap between clean
-                    application logic and intuitive user interfaces. I treat code as a craft, focusing on strong
-                    object-oriented foundations while actively expanding my stack into full-stack web
-                    development. My goal is to build highly responsive, well structured digital solutions that
-                    solve real-world problems.
+                <p>I am an incoming 3rd-year Information Technology student (Expected Graduation: July 2028),
+                    focused on bridging the gap between clean application logic and intuitive user interfaces.
+                    I treat code as a craft, focusing on strong object-oriented foundations in C# while actively
+                    specializing in ASP.NET Core to build secure, enterprise-grade web applications. My goal is
+                    to build highly responsive, well structured digital solutions that solve real-world problems.
                 </p>
             </section>
             <section id="skills">
@@ -80,10 +79,12 @@ using semantic HTML5">
                         </ul>
                     </div>
                     <div>
-                        <h3>Backend &amp; Tools</h3>
+                        <h3>Backend &amp; Enterprise</h3>
                         <ul>
-                            <li>Object-Oriented Programming (OOP)</li>
-                            <li>Figma</li>
+                            <li>C# (OOP)</li>
+                            <li>ASP.NET Core</li>
+                            <li>MVC Architecture</li>
+                            <li>SQL Server</li>
                             <li>Git/GitHub</li>
                         </ul>
                     </div>
@@ -94,8 +95,10 @@ using semantic HTML5">
                 <div class="projects-grid">
                     <article>
                         <div>
-                            <!--TODO:Image Placeholder 1-->
                             <h3>Responsive Developer Portfolio Shell</h3>
+                        </div>
+                        <div>
+                            <!--TODO:Image Placeholder 1-->
                             <p>A minimalist, mobile-responsive portfolio built from scratch
                                 using semantic HTML5 and modern CSS. Built to practice core layout core
                                 architectures like Flexbox and CSS Grid.</p>
@@ -114,25 +117,28 @@ using semantic HTML5">
                                     <a href="#">[Live Demo]</a>
                                 </strong>
                             </p>
-                            <p><a href="#">[GitHub]</a></p>
+
+                            <p><a href="https://github.com/gianm-it/portfolio" target="_blank"
+                                    rel="noopener noreferrer">[GitHub]</a></p>
                         </div>
                     </article>
                     <article>
                         <div>
+                            <h3>ASP.NET Core Web Application</h3>
+                        </div>
+                        <div>
                             <!--TODO:Add Image Placeholder 2-->
-                            <h3>Full-Stack Job Application Tracker (In Development)</h3>
-                            <p>A web application designed to track job applications, featuring
-                                secure user authentication, relational database storage, and full CRUD
-                                functionality.
+                            <p>A full-stack web application built to master MVC architecture, Entity Framework,
+                                and SQL Server data management.
                             </p>
                         </div>
                         <div>
                             <!--TECH STACK-->
                             <ul>
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>PostgreSQL</li>
-                                <li>VanillaJS</li>
+                                <li>C#</li>
+                                <li>ASP.NET Core</li>
+                                <li>MVC</li>
+                                <li>SQL Server</li>
                             </ul>
                         </div>
                         <div>
@@ -142,8 +148,10 @@ using semantic HTML5">
                     </article>
                     <article>
                         <div>
-                            <!--TODO:Add Image Placeholder 2-->
                             <h3>Object-Oriented Application Prototype</h3>
+                        </div>
+                        <div>
+                            <!--TODO:Add Image Placeholder 2-->
                             <p>A desktop application leveraging robust backend logic,
                                 structured inheritance, and efficient data handling developed during core
                                 programming coursework.
@@ -172,7 +180,21 @@ using semantic HTML5">
                 <h2>Get in touch</h2>
                 <p>I'm open to internships, junior roles, and collaboration on
                     interesting projects. My inbox is always open.</p>
-                <!--TODO: ADD CONTACTS-->
+                <ul class="contact-links">
+                    <li>
+                        <a href="mailto:morales.gian12@gmail.com">Email Me</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gianm-it" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="assets/resume.pdf" download>Download Resume</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gian-morales-415b9541b/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                </ul>
             </section>
         </footer>
     </div>
