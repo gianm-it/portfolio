@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Gian Morales">
-    <meta name="description" content="A minimalist, mobile-responsive portfolio built from scratch
-using semantic HTML5">
+    <meta name="description"
+        content="A minimalist, mobile-responsive portfolio built from scratch using semantic HTML5.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gian Morales</title>
     <link rel="stylesheet" href="css/style.css">
@@ -14,46 +14,43 @@ using semantic HTML5">
 <body>
     <div class="app-container" id="top">
         <header>
-            <a href="#top" class="main">GM<span class="main-dot">.</span>
+            <a href="#top" class="main-logo">
+                GM<span class="logo-dot">.</span>
             </a>
             <div class="header-right">
                 <nav class="navigation">
                     <ul>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <a href="assets/resume.pdf" download class="btn-cv">Download CV</a>
+                <a href="#" class="btn-cv">Download CV</a>
             </div>
         </header>
-        <hr>
+
+        <hr class="section-divider">
+
         <main>
             <section id="hero">
-                <p class="intro">Hi, my name is</p>
-                <h1 class="myname">Gian Morales</h1>
-                <p class="subheading">Bridging frontend interfaces with robust ASP.NET Core backend architecture.</p>
-                <p class="main-about">An IT student and aspiring Backend Developer focused on building secure,
+                <p class="intro-text">Hi, my name is</p>
+                <h1 class="hero-name">Gian Morales</h1>
+                <p class="hero-tagline">Bridging frontend interfaces with robust ASP.NET Core backend architecture.</p>
+                <p class="hero-description">
+                    An IT student and aspiring Backend Developer focused on building secure,
                     scalable web applications. Currently specializing in C# and ASP.NET Core to master
                     enterprise-grade software development.
                 </p>
-                <div class="btn">
+                <div class="hero-actions">
                     <a href="#projects" class="btn-primary">View Projects</a>
                     <a href="#contact" class="btn-secondary">Contact Me</a>
                 </div>
             </section>
             <section id="about">
-                <h2>ABOUT</h2>
-                <p>I am an incoming 3rd-year Information Technology student (Expected Graduation: July 2028),
+                <h2 class="section-heading">About</h2>
+                <p class="about-text">
+                    I am an incoming 3rd-year Information Technology student (Expected Graduation: July 2028),
                     focused on bridging the gap between clean application logic and intuitive user interfaces.
                     I treat code as a craft, focusing on strong object-oriented foundations in C# while actively
                     specializing in ASP.NET Core to build secure, enterprise-grade web applications. My goal is
@@ -61,139 +58,124 @@ using semantic HTML5">
                 </p>
             </section>
             <section id="skills">
-                <h2>SKILLS</h2>
+                <h2 class="section-heading">Skills</h2>
                 <div class="skills-grid">
-                    <div>
+                    <div class="skills-category">
                         <h3>Languages</h3>
-                        <ul>
-                            <li>C#</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
+                        <ul class="pill-list">
+                            <li class="pill">C#</li>
+                            <li class="pill">Java</li>
+                            <li class="pill">JavaScript</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="skills-category">
                         <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3 (Flexbox/Grid)</li>
+                        <ul class="pill-list">
+                            <li class="pill">HTML5</li>
+                            <li class="pill">CSS3 (Flexbox/Grid)</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="skills-category">
                         <h3>Backend &amp; Enterprise</h3>
-                        <ul>
-                            <li>C# (OOP)</li>
-                            <li>ASP.NET Core</li>
-                            <li>MVC Architecture</li>
-                            <li>SQL Server</li>
-                            <li>Git/GitHub</li>
+                        <ul class="pill-list">
+                            <li class="pill">C# (OOP)</li>
+                            <li class="pill">ASP.NET Core</li>
+                            <li class="pill">MVC Architecture</li>
+                            <li class="pill">SQL Server</li>
+                            <li class="pill">Git/GitHub</li>
                         </ul>
                     </div>
                 </div>
             </section>
+
+            <!-- Projects Section -->
             <section id="projects">
-                <h2>PROJECTS</h2>
+                <h2 class="section-heading">Projects</h2>
                 <div class="projects-grid">
-                    <article>
-                        <div>
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="card-header">
                             <h3>Responsive Developer Portfolio Shell</h3>
                         </div>
-                        <div>
-                            <!--TODO:Image Placeholder 1-->
-                            <p>A minimalist, mobile-responsive portfolio built from scratch
-                                using semantic HTML5 and modern CSS. Built to practice core layout core
-                                architectures like Flexbox and CSS Grid.</p>
+                        <div class="card-body">
+                            <p>A minimalist, mobile-responsive portfolio built from scratch using semantic HTML5 and
+                                modern CSS. Built to practice core layout architectures like Flexbox and CSS Grid.</p>
                         </div>
-                        <div>
-                            <!--TECH STACK-->
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>Flexbox &amp; Grid</li>
+                        <div class="card-footer">
+                            <ul class="pill-list tags">
+                                <li class="pill">HTML5</li>
+                                <li class="pill">CSS3</li>
+                                <li class="pill">Flexbox &amp; Grid</li>
                             </ul>
-                        </div>
-                        <div>
-                            <p>
-                                <strong>
-                                    <a href="#">[Live Demo]</a>
-                                </strong>
-                            </p>
-
-                            <p><a href="https://github.com/gianm-it/portfolio" target="_blank"
-                                    rel="noopener noreferrer">[GitHub]</a></p>
+                            <div class="project-links">
+                                <a href="#" class="link-live"><strong>[Live Demo]</strong></a>
+                                <a href="https://github.com/gianm-it/portfolio" target="_blank"
+                                    rel="noopener noreferrer" class="link-git">[GitHub]</a>
+                            </div>
                         </div>
                     </article>
-                    <article>
-                        <div>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="card-header">
                             <h3>ASP.NET Core Web Application</h3>
                         </div>
-                        <div>
-                            <!--TODO:Add Image Placeholder 2-->
-                            <p>A full-stack web application built to master MVC architecture, Entity Framework,
-                                and SQL Server data management.
-                            </p>
+                        <div class="card-body">
+                            <p>A full-stack web application built to master MVC architecture, Entity Framework, and SQL
+                                Server data management.</p>
                         </div>
-                        <div>
-                            <!--TECH STACK-->
-                            <ul>
-                                <li>C#</li>
-                                <li>ASP.NET Core</li>
-                                <li>MVC</li>
-                                <li>SQL Server</li>
+                        <div class="card-footer">
+                            <ul class="pill-list tags">
+                                <li class="pill">C#</li>
+                                <li class="pill">ASP.NET Core</li>
+                                <li class="pill">MVC</li>
+                                <li class="pill">SQL Server</li>
                             </ul>
-                        </div>
-                        <div>
-                            <p><a href="#">[Coming Soon]</a></p>
-                            <p><a href="#">[GitHub <abbr title="Repository">Repo</abbr>]</a></p>
+                            <div class="project-links">
+                                <a href="#" class="link-disabled">[Coming Soon]</a>
+                                <a href="#" class="link-disabled">[GitHub Repo]</a>
+                            </div>
                         </div>
                     </article>
-                    <article>
-                        <div>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="card-header">
                             <h3>Object-Oriented Application Prototype</h3>
                         </div>
-                        <div>
-                            <!--TODO:Add Image Placeholder 2-->
-                            <p>A desktop application leveraging robust backend logic,
-                                structured inheritance, and efficient data handling developed during core
-                                programming coursework.
-                            </p>
+                        <div class="card-body">
+                            <p>A desktop application leveraging robust backend logic, structured inheritance, and
+                                efficient data handling developed during core programming coursework.</p>
                         </div>
-                        <div>
-                            <!--TECH STACK-->
-                            <ul>
-                                <li>C#</li>
-                                <li>Java</li>
-                                <li><abbr title="Object-Oriented Programming">OOP</abbr></li>
-                                <li>Figma (Prototyping)</li>
+                        <div class="card-footer">
+                            <ul class="pill-list tags">
+                                <li class="pill">C#</li>
+                                <li class="pill">Java</li>
+                                <li class="pill">OOP</li>
+                                <li class="pill">Figma</li>
                             </ul>
-                        </div>
-                        <div>
-                            <p><a href="#">[Case Study]</a></p>
-                            <p><a href="#">[GitHub]</a></p>
+                            <div class="project-links">
+                                <a href="#" class="link-disabled">[Case Study]</a>
+                                <a href="#" class="link-disabled">[GitHub]</a>
+                            </div>
                         </div>
                     </article>
                 </div>
             </section>
         </main>
-        <hr>
+
+        <hr class="section-divider footer-divider">
         <footer>
             <section id="contact">
-                <h2>Get in touch</h2>
-                <p>I'm open to internships, junior roles, and collaboration on
-                    interesting projects. My inbox is always open.</p>
+                <h2 class="contact-title">Get in touch</h2>
+                <p class="contact-subtitle">I'm open to internships, junior roles, and collaboration on interesting
+                    projects. My inbox is always open.</p>
                 <ul class="contact-links">
-                    <li>
-                        <a href="mailto:morales.gian12@gmail.com">Email Me</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/gianm-it" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="assets/resume.pdf" download>Download Resume</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/gian-morales-415b9541b/" target="_blank"
-                            rel="noopener noreferrer">LinkedIn</a>
-                    </li>
+                    <li><a href="mailto:morales.gian12@gmail.com">Email Me</a></li>
+                    <li><a href="https://github.com/gianm-it" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="#" download>Download Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/gian-morales-415b9541b/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></li>
                 </ul>
             </section>
         </footer>
