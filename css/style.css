@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap");
-/* ==========================================================================
-   1. Design Tokens & Core Settings
-   ========================================================================== */
+
 :root {
   --bg-obsidian-950: #0a0a0b;
   --bg-obsidian-900: #121214;
